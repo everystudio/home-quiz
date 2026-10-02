@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
   <rect width="400" height="300" rx="20" fill="#fff0f4"/>
   <path d="M200 250 C 80 170, 90 70, 160 70 C 185 70, 200 90, 200 105 C 200 90, 215 70, 240 70 C 310 70, 320 170, 200 250 Z" fill="#ff6b8b"/>
-  <text x="200" y="285" text-anchor="middle" font-size="18" fill="#999" font-family="sans-serif">（仮のご褒美画像）</text>
+  <text x="200" y="285" text-anchor="middle" font-size="18" fill="#999" font-family="sans-serif">（仮のクリア画像）</text>
 </svg>

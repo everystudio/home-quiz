@@ -3,20 +3,26 @@
 身内向けの3択クイズ Web アプリです。HTML/CSS/JS だけで動き、ビルドは不要です。
 
 - 不正解だと同じ問題からやり直し
-- 最終問題に正解すると Congratulations 画面とご褒美画像を表示
+- 正解すると「正解！」と正解画像を表示し、「次へ」で次の問題へ
+- 最終問題に正解すると Congratulations 画面とクリア画像を表示
 
-## 設問・ご褒美画像の差し替え
+## 内容の差し替え
 
-`questions.js` だけを編集します。
+`questions.js` だけを編集します。画像は `images/` に置き、パスを `"images/ファイル名"` で指定します（jpg / png / svg など）。
+
+| 設定 | 内容 |
+|---|---|
+| `TOP.title` / `TOP.image` / `TOP.message` | トップページのタイトル・画像・説明文 |
+| `QUESTIONS[].question` / `choices` | 問題文と3つの選択肢 |
+| `QUESTIONS[].answer` | 正解の番号（0 始まり: 0=1番目, 1=2番目, 2=3番目） |
+| `QUESTIONS[].image` | その問題に正解したときに出す画像（省略可） |
+| `REWARD.image` / `REWARD.message` | 最後の Congratulations 画面の画像とメッセージ |
 
 ```js
 const QUESTIONS = [
-  { question: "問題文", choices: ["選択肢1", "選択肢2", "選択肢3"], answer: 1 }, // answer は 0 始まり
+  { question: "問題文", choices: ["A", "B", "C"], answer: 1, image: "images/q1.jpg" },
 ];
-const REWARD = { image: "images/reward.jpg", message: "おめでとう！" };
 ```
-
-画像は `images/` に置き、`REWARD.image` のパスを合わせてください。
 
 ## ローカルで確認
 

@@ -17,6 +17,7 @@
     $("feedback").textContent = "";
     $("feedback").className = "feedback";
     $("btn-next").hidden = true;
+    $("correct-image").hidden = true;
 
     const choices = $("choices");
     choices.innerHTML = "";
@@ -39,6 +40,10 @@
       btn.classList.add("correct");
       $("feedback").textContent = "正解！";
       $("feedback").className = "feedback ok";
+      if (q.image) {
+        $("correct-image").src = q.image;
+        $("correct-image").hidden = false;
+      }
       $("btn-next").hidden = false;
     } else {
       btn.classList.add("incorrect");
@@ -67,6 +72,19 @@
     }
     setTimeout(() => (box.innerHTML = ""), 7000);
   }
+
+  function renderTop() {
+    $("top-title").textContent = TOP.title;
+    document.title = TOP.title;
+    $("top-message").textContent = TOP.message;
+    if (TOP.image) {
+      $("top-image").src = TOP.image;
+    } else {
+      $("top-image").hidden = true;
+    }
+  }
+
+  renderTop();
 
   $("btn-start").addEventListener("click", () => {
     currentIndex = 0;

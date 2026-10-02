@@ -10,8 +10,9 @@
   <main class="card">
     <!-- スタート画面 -->
     <section id="screen-start" class="screen active">
-      <h1>ホームクイズ</h1>
-      <p>全問正解するとご褒美があるよ！</p>
+      <h1 id="top-title"></h1>
+      <img id="top-image" class="top-image" alt="">
+      <p id="top-message"></p>
       <button id="btn-start" class="btn primary">はじめる</button>
     </section>
 
@@ -21,6 +22,7 @@
       <h2 id="question-text"></h2>
       <div id="choices" class="choices"></div>
       <p id="feedback" class="feedback"></p>
+      <img id="correct-image" class="correct-image" alt="" hidden>
       <button id="btn-next" class="btn primary" hidden>次へ</button>
     </section>
 
@@ -34,7 +36,7 @@
     <!-- クリア画面 -->
     <section id="screen-clear" class="screen">
       <h1 class="congrats">Congratulations!</h1>
-      <img id="reward-image" class="reward" alt="ご褒美画像">
+      <img id="reward-image" class="reward" alt="">
       <p id="reward-message"></p>
       <button id="btn-restart" class="btn">最初から遊ぶ</button>
     </section>

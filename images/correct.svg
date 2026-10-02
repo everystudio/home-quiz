@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240">
+  <rect width="400" height="240" rx="20" fill="#e6fbf4"/>
+  <circle cx="200" cy="105" r="70" fill="none" stroke="#06d6a0" stroke-width="18"/>
+  <text x="200" y="215" text-anchor="middle" font-size="18" fill="#999" font-family="sans-serif">（仮の正解画像）</text>
+</svg>
