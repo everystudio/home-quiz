@@ -40,6 +40,8 @@ python3 -m http.server 8000
 2. GitHub の Settings → Pages → Source: **Deploy from a branch**、Branch: `main` / `/(root)` を選んで Save
 3. 1〜2分後に `https://everystudio.github.io/home-quiz/` で公開されます
 
+公開URLのQRコード: [`qr.png`](qr.png)
+
 ※ public リポジトリなので、設問・正解・画像はソースから誰でも見られます。
 
 ## 公開の終了
