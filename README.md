@@ -30,7 +30,7 @@ python3 -m http.server 8000
 ## 公開（GitHub Pages）
 
 1. このリポジトリを GitHub に push（Pages 無料版は public リポジトリが必要）
-2. GitHub の Settings → Pages → Source: **Deploy from a branch**、Branch: `master` / `/(root)` を選んで Save
+2. GitHub の Settings → Pages → Source: **Deploy from a branch**、Branch: `main` / `/(root)` を選んで Save
 3. 1〜2分後に `https://everystudio.github.io/home-quiz/` で公開されます
 
 ※ public リポジトリなので、設問・正解・画像はソースから誰でも見られます。
