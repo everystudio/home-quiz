@@ -39,5 +39,5 @@ const QUESTIONS = [
 // 最後の問題に正解した後の Congratulations 画面
 const REWARD = {
   image: "images/reward.JPG",
-  message: "おめでとう！全問正解です！",
+  message: "今後とも末永くよろしくお願いします！",
 };
