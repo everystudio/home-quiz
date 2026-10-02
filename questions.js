@@ -4,7 +4,7 @@
 // トップページ
 const TOP = {
   title: "ホームクイズ",
-  image: "images/top.svg",
+  image: "images/top.JPG",
   message: "3択クイズに挑戦しよう！",
 };
 
@@ -16,24 +16,24 @@ const QUESTIONS = [
     question: "日本で一番高い山は？",
     choices: ["北岳", "富士山", "奥穂高岳"],
     answer: 1,
-    image: "images/correct.svg",
+    image: "images/q1.JPG",
   },
   {
     question: "1年は何日？（うるう年ではない場合）",
     choices: ["365日", "360日", "366日"],
     answer: 0,
-    image: "images/correct.svg",
+    image: "images/q2.JPG",
   },
   {
     question: "虹の色は一般的に何色と言われる？",
     choices: ["5色", "6色", "7色"],
     answer: 2,
-    image: "images/correct.svg",
+    image: "images/q3.JPG",
   },
 ];
 
 // 最後の問題に正解した後の Congratulations 画面
 const REWARD = {
-  image: "images/reward.svg",
+  image: "images/reward.JPG",
   message: "おめでとう！全問正解です！",
 };
