@@ -16,6 +16,7 @@
     $("question-text").textContent = q.question;
     $("feedback").textContent = "";
     $("feedback").className = "feedback";
+    $("btn-next").hidden = true;
 
     const choices = $("choices");
     choices.innerHTML = "";
@@ -38,14 +39,7 @@
       btn.classList.add("correct");
       $("feedback").textContent = "正解！";
       $("feedback").className = "feedback ok";
-      setTimeout(() => {
-        if (currentIndex === QUESTIONS.length - 1) {
-          showClear();
-        } else {
-          currentIndex++;
-          renderQuestion();
-        }
-      }, 900);
+      $("btn-next").hidden = false;
     } else {
       btn.classList.add("incorrect");
       setTimeout(() => showScreen("wrong"), 600);
@@ -77,6 +71,15 @@
   $("btn-start").addEventListener("click", () => {
     currentIndex = 0;
     renderQuestion();
+  });
+  // 正解後は「次へ」を押したときだけ進む
+  $("btn-next").addEventListener("click", () => {
+    if (currentIndex === QUESTIONS.length - 1) {
+      showClear();
+    } else {
+      currentIndex++;
+      renderQuestion();
+    }
   });
   // 不正解時は同じ問題 (currentIndex はそのまま) からやり直し
   $("btn-retry").addEventListener("click", renderQuestion);

@@ -46,6 +46,7 @@ h2 { font-size: 1.3rem; margin: 8px 0 24px; line-height: 1.5; }
 }
 .btn:active { transform: scale(0.97); }
 .btn.primary { background: #ff6b8b; color: #fff; }
+.btn[hidden] { display: none; }
 
 .choice.correct { background: #06d6a0; border-color: #06d6a0; color: #fff; }
 .choice.incorrect { background: #999; border-color: #999; color: #fff; animation: shake 0.4s; }
