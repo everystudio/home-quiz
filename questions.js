@@ -3,7 +3,7 @@
 
 // トップページ
 const TOP = {
-  title: "ホームクイズ",
+  title: "将志・未来の食事会クイズ",
   image: "images/top.JPG",
   message: "3択クイズに挑戦しよう！",
 };
@@ -17,14 +17,14 @@ const QUESTIONS = [
     question: "未来ちゃんの出身地はどこでしょうか？",
     choices: ["大阪", "秋田", "香川"],
     answer: 1,
-    image: "images/q1.JPG",
+    image: "images/q2.JPG",
     explanation: "正解は秋田！\n以前は由利本荘（ゆりほんじょう）市に住んでいたぞ！",
   },
   {
     question: "今日の食事会の最寄り駅はどこでしょうか？",
     choices: ["武蔵小杉", "竜宮城前", "ホグワーツ魔法魔術学校前"],
     answer: 0,
-    image: "images/q2.JPG",
+    image: "images/q1.JPG",
     explanation: "正解は武蔵小杉！\n東急東横線・東急目黒線、JR南武線・横須賀線・湘南新宿ラインが通る、とっても便利な駅です。",
   },
   {
