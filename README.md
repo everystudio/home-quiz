@@ -3,7 +3,7 @@
 身内向けの3択クイズ Web アプリです。HTML/CSS/JS だけで動き、ビルドは不要です。
 
 - 不正解だと同じ問題からやり直し
-- 正解すると「正解！」と正解画像を表示し、「次へ」で次の問題へ
+- 正解すると「正解！」と正解画像・説明文を表示し、「次へ」で次の問題へ
 - 最終問題に正解すると Congratulations 画面とクリア画像を表示
 
 ## 内容の差し替え
@@ -16,6 +16,7 @@
 | `QUESTIONS[].question` / `choices` | 問題文と3つの選択肢 |
 | `QUESTIONS[].answer` | 正解の番号（0 始まり: 0=1番目, 1=2番目, 2=3番目） |
 | `QUESTIONS[].image` | その問題に正解したときに出す画像（省略可） |
+| `QUESTIONS[].explanation` | その問題に正解したときに出す説明文（省略可、`\n` で改行） |
 | `REWARD.image` / `REWARD.message` | 最後の Congratulations 画面の画像とメッセージ |
 
 ```js

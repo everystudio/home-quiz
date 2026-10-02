@@ -18,6 +18,7 @@
     $("feedback").className = "feedback";
     $("btn-next").hidden = true;
     $("correct-image").hidden = true;
+    $("explanation").hidden = true;
 
     const choices = $("choices");
     choices.innerHTML = "";
@@ -43,6 +44,10 @@
       if (q.image) {
         $("correct-image").src = q.image;
         $("correct-image").hidden = false;
+      }
+      if (q.explanation) {
+        $("explanation").textContent = q.explanation;
+        $("explanation").hidden = false;
       }
       $("btn-next").hidden = false;
     } else {

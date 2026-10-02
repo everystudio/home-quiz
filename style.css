@@ -82,6 +82,18 @@ h2 { font-size: 1.3rem; margin: 8px 0 24px; line-height: 1.5; }
 }
 .correct-image[hidden] { display: none; }
 
+.explanation {
+  margin: 0 0 8px;
+  padding: 12px 16px;
+  background: #e6fbf4;
+  border-radius: 12px;
+  line-height: 1.7;
+  text-align: left;
+  white-space: pre-line;
+  animation: fadein 0.5s;
+}
+.explanation[hidden] { display: none; }
+
 .reward {
   width: 100%;
   max-height: 60vh;
